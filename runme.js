@@ -1120,7 +1120,7 @@ var pushToGithubSync = function() {
   // git push
   var stdout = "";
   stdout += "> git add *\n";
-  stdout += '> git commit -m "fixed incorrect XY search direction."\n';
+  stdout += '> git commit\n';
   stdout += "> git push\n";
   stdout += proc.execSync('git add *; git commit -m "Restructuring to allow multi-axis"; git push;', { encoding: 'utf8' });
   console.log("Pushed to github sync. Stdout:", stdout);

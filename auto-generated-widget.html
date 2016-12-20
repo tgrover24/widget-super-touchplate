@@ -336,7 +336,7 @@ cpdefine("inline:com-chilipeppr-widget-super-touchplate", ["chilipeppr_ready", '
       }
       //Start searching!
       var id = "tp" + this.gcodeCtr++;
-      gcode = "G38.2 Z-20 F" + fr + "\n";
+      gcode = "G38.2 Z-100 F" + fr + "\n";
       chilipeppr.publish("/com-chilipeppr-widget-serialport/jsonSend", {
         Id: id,
         D: gcode
